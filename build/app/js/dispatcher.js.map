@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/app/js/dispatcher.js"],"names":[],"mappings":";;;;;;;;;;;;AAGO,MAAM,UAAU,GAAG,sBAAS,CAAA;UAAtB,UAAU,GAAV,UAAU","file":"dispatcher.js","sourcesContent":["/* eslint-disable new-cap */\nimport alt from 'alt'\n\nexport const dispatcher = new alt()\n"]}

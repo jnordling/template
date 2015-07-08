@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Google Fusion Tables API Example</title>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+    function handler(response) {
+      for (var i = 0; i < response.items.length; i++) {
+        var item = response.items[i];
+        // Either show the body or the automatic columns of the template
+        if (item.body) {
+          document.getElementById("content").innerHTML += "<br>" + item.body;
+        } else {
+          debugger
+          for (var j = 0; j < item.automaticColumnNames.length; j++) {
+            document.getElementById("content").innerHTML += "<br>" + item.automaticColumnNames[j];
+          }
+        }
+      }
+    }
+    </script>
+    <script src="https://www.googleapis.com/fusiontables/v2/tables/1CU2ezMrot9-pxzSnTmk0_MM_JCOA8G7_G8NwBSep/columns?callback=handler&key=AIzaSyDINBmL9fACVrtAG9GncMn23KzDuRDB2Z0"></script>
+  </body>
+</html>
