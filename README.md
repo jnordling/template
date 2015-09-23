@@ -1,2 +1,10 @@
-# jgi-dashboard
-Dashboard to display JGI forms and develop a dashboard around the data as a live feed.
+# ReactJS & Flux Template 
+
+### Packages
+
+* Reactjs
+* Alt
+* Bower
+* Gulp
+* Jade
+* Stylus
